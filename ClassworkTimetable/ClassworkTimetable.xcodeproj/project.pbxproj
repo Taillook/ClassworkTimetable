@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C976CC3F1ED08F100036FF85 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976CC3E1ED08F100036FF85 /* NotificationCenter.framework */; };
+		C976CC421ED08F100036FF85 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C976CC411ED08F100036FF85 /* TodayViewController.swift */; };
+		C976CC451ED08F100036FF85 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C976CC431ED08F100036FF85 /* MainInterface.storyboard */; };
+		C976CC491ED08F100036FF85 /* TimetableOfClass.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C976CC3C1ED08F100036FF85 /* TimetableOfClass.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C9F3B2C91ECC47640000D709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F3B2C81ECC47640000D709 /* AppDelegate.swift */; };
 		C9F3B2CB1ECC47640000D709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F3B2CA1ECC47640000D709 /* ViewController.swift */; };
 		C9F3B2CE1ECC47640000D709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F3B2CC1ECC47640000D709 /* Main.storyboard */; };
@@ -14,7 +18,36 @@
 		C9F3B2D31ECC47640000D709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F3B2D11ECC47640000D709 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C976CC471ED08F100036FF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9F3B2BD1ECC47640000D709 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C976CC3B1ED08F100036FF85;
+			remoteInfo = TimetableOfClass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C976CC4D1ED08F100036FF85 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C976CC491ED08F100036FF85 /* TimetableOfClass.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C976CC3C1ED08F100036FF85 /* TimetableOfClass.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimetableOfClass.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C976CC3E1ED08F100036FF85 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C976CC411ED08F100036FF85 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C976CC441ED08F100036FF85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C976CC461ED08F100036FF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F3B2C51ECC47640000D709 /* ClassworkTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassworkTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F3B2C81ECC47640000D709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9F3B2CA1ECC47640000D709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +58,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C976CC391ED08F100036FF85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C976CC3F1ED08F100036FF85 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F3B2C21ECC47640000D709 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C976CC3D1ED08F100036FF85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C976CC3E1ED08F100036FF85 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C976CC401ED08F100036FF85 /* TimetableOfClass */ = {
+			isa = PBXGroup;
+			children = (
+				C976CC411ED08F100036FF85 /* TodayViewController.swift */,
+				C976CC431ED08F100036FF85 /* MainInterface.storyboard */,
+				C976CC461ED08F100036FF85 /* Info.plist */,
+			);
+			path = TimetableOfClass;
+			sourceTree = "<group>";
+		};
 		C9F3B2BC1ECC47640000D709 = {
 			isa = PBXGroup;
 			children = (
 				C9F3B2C71ECC47640000D709 /* ClassworkTimetable */,
+				C976CC401ED08F100036FF85 /* TimetableOfClass */,
+				C976CC3D1ED08F100036FF85 /* Frameworks */,
 				C9F3B2C61ECC47640000D709 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				C9F3B2C51ECC47640000D709 /* ClassworkTimetable.app */,
+				C976CC3C1ED08F100036FF85 /* TimetableOfClass.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +129,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C976CC3B1ED08F100036FF85 /* TimetableOfClass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C976CC4C1ED08F100036FF85 /* Build configuration list for PBXNativeTarget "TimetableOfClass" */;
+			buildPhases = (
+				C976CC381ED08F100036FF85 /* Sources */,
+				C976CC391ED08F100036FF85 /* Frameworks */,
+				C976CC3A1ED08F100036FF85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimetableOfClass;
+			productName = TimetableOfClass;
+			productReference = C976CC3C1ED08F100036FF85 /* TimetableOfClass.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C9F3B2C41ECC47640000D709 /* ClassworkTimetable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9F3B2D71ECC47640000D709 /* Build configuration list for PBXNativeTarget "ClassworkTimetable" */;
@@ -74,10 +153,12 @@
 				C9F3B2C11ECC47640000D709 /* Sources */,
 				C9F3B2C21ECC47640000D709 /* Frameworks */,
 				C9F3B2C31ECC47640000D709 /* Resources */,
+				C976CC4D1ED08F100036FF85 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C976CC481ED08F100036FF85 /* PBXTargetDependency */,
 			);
 			name = ClassworkTimetable;
 			productName = ClassworkTimetable;
@@ -94,6 +175,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Taillook;
 				TargetAttributes = {
+					C976CC3B1ED08F100036FF85 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = YS65CTH2V7;
+						ProvisioningStyle = Automatic;
+					};
 					C9F3B2C41ECC47640000D709 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = YS65CTH2V7;
@@ -115,11 +201,20 @@
 			projectRoot = "";
 			targets = (
 				C9F3B2C41ECC47640000D709 /* ClassworkTimetable */,
+				C976CC3B1ED08F100036FF85 /* TimetableOfClass */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C976CC3A1ED08F100036FF85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C976CC451ED08F100036FF85 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F3B2C31ECC47640000D709 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +228,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C976CC381ED08F100036FF85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C976CC421ED08F100036FF85 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9F3B2C11ECC47640000D709 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +247,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C976CC481ED08F100036FF85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C976CC3B1ED08F100036FF85 /* TimetableOfClass */;
+			targetProxy = C976CC471ED08F100036FF85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		C976CC431ED08F100036FF85 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C976CC441ED08F100036FF85 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C9F3B2CC1ECC47640000D709 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -164,6 +283,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C976CC4A1ED08F100036FF85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YS65CTH2V7;
+				INFOPLIST_FILE = TimetableOfClass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.grapebread.ClassworkTimetable.TimetableOfClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C976CC4B1ED08F100036FF85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YS65CTH2V7;
+				INFOPLIST_FILE = TimetableOfClass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.grapebread.ClassworkTimetable.TimetableOfClass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		C9F3B2D51ECC47640000D709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +405,7 @@
 		C9F3B2D81ECC47640000D709 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YS65CTH2V7;
 				INFOPLIST_FILE = ClassworkTimetable/Info.plist;
@@ -273,6 +419,7 @@
 		C9F3B2D91ECC47640000D709 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YS65CTH2V7;
 				INFOPLIST_FILE = ClassworkTimetable/Info.plist;
@@ -286,6 +433,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C976CC4C1ED08F100036FF85 /* Build configuration list for PBXNativeTarget "TimetableOfClass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C976CC4A1ED08F100036FF85 /* Debug */,
+				C976CC4B1ED08F100036FF85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C9F3B2C01ECC47640000D709 /* Build configuration list for PBXProject "ClassworkTimetable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -302,6 +457,7 @@
 				C9F3B2D91ECC47640000D709 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
