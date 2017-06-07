@@ -10,5 +10,12 @@ import Foundation
 import UIKit
 
 class Timetable: UIView {
+    init(frame: CGRect, table: [[String]]) {
+
+        super.init(frame: frame)
+    }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
