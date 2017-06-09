@@ -10,10 +10,10 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-    var timeTable = Timetable(frame: CGRect(x: 0, y: 0, width: 600, height: 400), table: [["a"], ["b"], ["c"]])
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let timeTable = Timetable(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.width / 2), table: [["a"], ["b"], ["c"]])
         timeTable.backgroundColor = UIColor.blue
         self.view.addSubview(timeTable)
         // Do any additional setup after loading the view from its nib.
