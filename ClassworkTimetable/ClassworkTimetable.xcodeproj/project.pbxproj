@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C93655AF1EEAAB9400E213C8 /* CustomUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93655AE1EEAAB9400E213C8 /* CustomUIColor.swift */; };
-		C951A2AF1EE8401300CF8388 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C951A2AE1EE8401300CF8388 /* Timetable.swift */; };
 		C976CC3F1ED08F100036FF85 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C976CC3E1ED08F100036FF85 /* NotificationCenter.framework */; };
 		C976CC421ED08F100036FF85 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C976CC411ED08F100036FF85 /* TodayViewController.swift */; };
 		C976CC451ED08F100036FF85 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C976CC431ED08F100036FF85 /* MainInterface.storyboard */; };
@@ -46,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		C93655AE1EEAAB9400E213C8 /* CustomUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIColor.swift; sourceTree = "<group>"; };
-		C951A2AE1EE8401300CF8388 /* Timetable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
 		C976CC3C1ED08F100036FF85 /* TimetableOfClass.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimetableOfClass.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C976CC3E1ED08F100036FF85 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		C976CC411ED08F100036FF85 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 				C976CC461ED08F100036FF85 /* Info.plist */,
 				C976CC431ED08F100036FF85 /* MainInterface.storyboard */,
 				C976CC411ED08F100036FF85 /* TodayViewController.swift */,
-				C951A2AE1EE8401300CF8388 /* Timetable.swift */,
 			);
 			path = TimetableOfClass;
 			sourceTree = "<group>";
@@ -123,8 +120,8 @@
 			children = (
 				C9F3B2C81ECC47640000D709 /* AppDelegate.swift */,
 				C9F3B2CA1ECC47640000D709 /* ViewController.swift */,
-				C93655AE1EEAAB9400E213C8 /* CustomUIColor.swift */,
 				C9F3B2CC1ECC47640000D709 /* Main.storyboard */,
+				C93655AE1EEAAB9400E213C8 /* CustomUIColor.swift */,
 				C9F3B2CF1ECC47640000D709 /* Assets.xcassets */,
 				C9F3B2D11ECC47640000D709 /* LaunchScreen.storyboard */,
 				C9F3B2D41ECC47640000D709 /* Info.plist */,
@@ -239,7 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C976CC421ED08F100036FF85 /* TodayViewController.swift in Sources */,
-				C951A2AF1EE8401300CF8388 /* Timetable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
