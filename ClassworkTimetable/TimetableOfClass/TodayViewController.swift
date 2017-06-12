@@ -31,24 +31,21 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
         CollectionView.collectionViewLayout = layout
     }
     
-    //データの個数を返すメソッド
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return 20
     }
     
     
-    //データを返すメソッド
     internal func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        //コレクションビューから識別子「TestCell」のセルを取得する。
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as UICollectionViewCell
         
-        //セルの背景色をランダムに設定する。
         cell.backgroundColor = UIColor(red: CGFloat(drand48()),
                                        green: CGFloat(drand48()),
                                        blue: CGFloat(drand48()),
                                        alpha: 1.0)
+        (cell.viewWithTag(1) as! UILabel).text = String(describing: indexPath.row)
         return cell
     }
     

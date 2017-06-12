@@ -37,7 +37,21 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="41" height="31"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-ca-93s">
+                                                    <rect key="frame" x="0.0" y="0.0" width="41" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="pWk-ca-93s" secondAttribute="trailing" id="Isy-3S-hNm"/>
+                                            <constraint firstItem="pWk-ca-93s" firstAttribute="leading" secondItem="qib-BF-Fvg" secondAttribute="leading" id="ZJ4-9X-SQC"/>
+                                            <constraint firstItem="pWk-ca-93s" firstAttribute="top" secondItem="qib-BF-Fvg" secondAttribute="top" id="rbp-SN-YZf"/>
+                                            <constraint firstAttribute="bottom" secondItem="pWk-ca-93s" secondAttribute="bottom" id="sF7-Qf-5Yj"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
