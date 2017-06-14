@@ -13,6 +13,9 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var CollectionView: UICollectionView!
     
+    let li = [["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"]]
+    let li2 = ["a", "b", "c", "d", "b", "c", "d", "b", "c", "d", "a", "b", "c", "d", "b", "c", "d", "b", "c", "d"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -20,11 +23,9 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let li = [["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"]]
-        print(li.count)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: Int(CollectionView.bounds.width) / 5, height: Int(CollectionView.bounds.height) / 4)
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 0
@@ -45,7 +46,7 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
                                        green: CGFloat(drand48()),
                                        blue: CGFloat(drand48()),
                                        alpha: 1.0)
-        (cell.viewWithTag(1) as! UILabel).text = String(describing: indexPath.row)
+        (cell.viewWithTag(1) as! UILabel).text = li2[indexPath.row]
         return cell
     }
     
