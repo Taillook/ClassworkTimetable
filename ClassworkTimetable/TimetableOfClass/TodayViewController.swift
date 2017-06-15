@@ -14,7 +14,7 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var CollectionView: UICollectionView!
     
     let li = [["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"], ["a", "b", "c", "d"]]
-    let li2 = ["a", "b", "c", "d", "b", "c", "d", "b", "c", "d", "a", "b", "c", "d", "b", "c", "d", "b", "c", "d"]
+    let li2 = ["Science", "b", "c", "d", "b", "c", "d", "b", "c", "d", "a", "b", "c", "d", "b", "c", "d", "b", "c", "d"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class TodayViewController: UIViewController, UICollectionViewDelegate, UICollect
                                        green: CGFloat(drand48()),
                                        blue: CGFloat(drand48()),
                                        alpha: 1.0)
-        (cell.viewWithTag(1) as! UILabel).text = li2[indexPath.row]
+        (cell.viewWithTag(1) as! UILabel).text = li2[0]
         return cell
     }
     
